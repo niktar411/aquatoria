@@ -190,7 +190,7 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
 .time-col {
   font-weight: bold;
   white-space: nowrap; /* Чтобы время не переносилось на 2 строки */
-  text-align: right;
+  text-align: center;
   background-color: #f8f9fa;
   position: sticky; /* Прилипает слева при скролле */
   left: 0;
