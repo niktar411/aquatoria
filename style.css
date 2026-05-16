@@ -150,6 +150,22 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
 .dir-grid{grid-template-columns:1fr}
 .cta-inner{padding:36px 22px}
 .gallery-scroll img{width:240px;height:170px}
+.hero-images {display: none;}
+  .time-col span {
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .time-col {
+    vertical-align: middle;
+    text-align: center;
+    width: 80px;
+    min-width: 55px;
+    padding: 8px !important;
+  }
+  .nextphone {
+    display: block;
+  }
 }
 .table-responsive {
   width: 100%;

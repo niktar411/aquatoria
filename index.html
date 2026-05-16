@@ -34,9 +34,9 @@
 <a href="#contact">Запись</a>
 </nav>
 
-<a class="header-phone" href="tel:+73462563535">
+<a class="header-phone" href="tel:+79044798787">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.4 11.4 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z" fill="currentColor"/></svg>
-+7 (3462) 56-35-35
++7 (9044) 79-87-87
 </a>
 </div>
 </header>
@@ -82,7 +82,7 @@
 <div class="container">
 <div class="section-head reveal">
 <h2>Наши направления</h2>
-<p>Широкий выбор занятий для всей семьи — от раннего утра до позднего вечера</p>
+<p>Широкий выбор занятий для всех возрастов— от раннего утра до позднего вечера</p>
 </div>
 
 <div class="dir-grid">
@@ -96,7 +96,7 @@
 </article>
 <article class="dir-card reveal">
 <div class="dir-card-img"><img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?w=500&h=300&fit=crop&q=80" alt="Бассейн"/></div>
-<div class="dir-card-body"><h3>Водные занятия</h3><p>Бассейн для детей и акваэробика для взрослых</p></div>
+<div class="dir-card-body"><h3>Водные занятия</h3><p>Бассейн и СПА</p></div>
 </article>
 <article class="dir-card orange reveal">
 <div class="dir-card-img"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&h=300&fit=crop&q=80" alt="Фитнес"/></div>
@@ -134,15 +134,17 @@
 <div class="container">
 <div class="section-head reveal">
 <h2>Расписание занятий</h2>
-<p>Нажмите на занятие, чтобы узнать подробности. <span style="color:var(--blue);font-weight:700">■</span> — основные,
-<span style="color:var(--orange);font-weight:700">■</span> — фитнес-направления</p>
+<p>
+<span style="color:var(--blue);font-weight:700">■</span> — подростки и взрослые,
+<span style="color:var(--orange);font-weight:700">■</span> — дети
+</p>
 </div>
 
 <div class="table-responsive timetable reveal">
   <table class="schedule-table" id="scheduleTable">
     <thead>
       <tr>
-        <th class="time-col-header">Время</th>
+        <th class="time-col-header" style="color: black;">Время</th>
         <th>Понедельник</th>
         <th>Вторник</th>
         <th>Среда</th>
@@ -155,7 +157,7 @@
       
       <!-- 07:00–09:00 -->
       <tr>
-        <td class="time-col">07:00–09:00</td>
+        <td class="time-col"><span class="time-start">7:00</span><span class="dash">–</span><span class="time-end">9:00</span></td>
         <td><!-- ПН -->
           <div class="cell orange-cell">
             <span class="cell-name">Клубная карта · Тренажёрный зал</span>
@@ -184,9 +186,9 @@
 
       <!-- 08:00–09:00 -->
       <tr>
-        <td class="time-col">08:00–09:00</td>
+        <td class="time-col"><span class="time-start">8:00</span><span class="dash">–</span><span class="time-end">9:00</span></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Панкриатион</span>
             <span class="cell-info">Дети 7–14</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
@@ -194,7 +196,7 @@
         </td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Панкриатион</span>
             <span class="cell-info">Дети 7–14</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
@@ -202,7 +204,7 @@
         </td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Панкриатион</span>
             <span class="cell-info">Дети 7–14</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
@@ -213,10 +215,10 @@
 
       <!-- 10:30–11:30 -->
       <tr>
-        <td class="time-col">10:30–11:30</td>
+        <td class="time-col"><span class="time-start">10:30</span><span class="dash">–</span><span class="time-end">11:30</span></td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Бассейн</span>
             <span class="cell-info">Дети 8–16</span>
             <span class="cell-price">3 400 / 2 900 ₽</span>
@@ -224,7 +226,7 @@
         </td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Бассейн</span>
             <span class="cell-info">Дети 8–16</span>
             <span class="cell-price">3 400 / 2 900 ₽</span>
@@ -236,33 +238,33 @@
 
       <!-- 12:00–14:00 -->
       <tr>
-        <td class="time-col">12:00–14:00</td>
+        <td class="time-col"><span class="time-start">12:00</span><span class="dash">–</span><span class="time-end">14:00</span></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Клубная карта · Тренажёрный зал</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Клубная карта · Тренажёрный зал</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Клубная карта · Тренажёрный зал</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Клубная карта · Тренажёрный зал</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Клубная карта · Тренажёрный зал</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
           </div>
@@ -272,10 +274,10 @@
 
       <!-- 16:00–17:00 -->
       <tr>
-        <td class="time-col">16:00–17:00</td>
+        <td class="time-col"><span class="time-start">16:00</span><span class="dash">–</span><span class="time-end">17:00</span></td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Каратэ</span>
             <span class="cell-info">Дети 7–14</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
@@ -283,7 +285,7 @@
         </td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Каратэ</span>
             <span class="cell-info">Дети 7–14</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
@@ -291,7 +293,7 @@
         </td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Каратэ</span>
             <span class="cell-info">Дети 7–14</span>
             <span class="cell-price">3 400 / 2 900 / 2 400 ₽</span>
@@ -301,10 +303,10 @@
 
       <!-- 16:30–17:30 -->
       <tr>
-        <td class="time-col">16:30–17:30</td>
+        <td class="time-col"><span class="time-start">16:30</span><span class="dash">–</span><span class="time-end">17:30</span></td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Бассейн</span>
             <span class="cell-info">Дети 5–16</span>
             <span class="cell-price">3 400 / 2 900 ₽</span>
@@ -312,7 +314,7 @@
         </td>
         <td></td>
         <td>
-          <div class="cell blue-cell">
+          <div class="cell orange-cell">
             <span class="cell-name">Бассейн</span>
             <span class="cell-info">Дети 5–16</span>
             <span class="cell-price">3 400 / 2 900 ₽</span>
@@ -324,7 +326,7 @@
 
       <!-- 17:00–18:00 -->
       <tr>
-        <td class="time-col">17:00–18:00</td>
+        <td class="time-col"><span class="time-start">17:00</span><span class="dash">–</span><span class="time-end">18:00</span></td>
         <td></td>
         <td></td>
         <td></td>
@@ -341,17 +343,17 @@
 
       <!-- 18:00–19:00 -->
       <tr>
-        <td class="time-col">18:00–19:00</td>
+        <td class="time-col"><span class="time-start">18:00</span><span class="dash">–</span><span class="time-end">19:00</span></td>
         <td></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес в гамаках</span>
             <span class="cell-price">3 400 / 2 400 ₽</span>
           </div>
         </td>
         <td></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес в гамаках</span>
             <span class="cell-price">3 400 / 2 400 ₽</span>
           </div>
@@ -362,39 +364,39 @@
 
       <!-- 18:00–21:00 -->
       <tr>
-        <td class="time-col">18:00–21:00</td>
+        <td class="time-col"><span class="time-start">18:00</span><span class="dash">–</span><span class="time-end">21:00</span></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Силовой и функц. тренинг</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Силовой и функц. тренинг</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Силовой и функц. тренинг</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Силовой и функц. тренинг</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Силовой и функц. тренинг</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Силовой и функц. тренинг</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
@@ -403,7 +405,7 @@
 
       <!-- 18:15–19:30 -->
       <tr>
-        <td class="time-col">18:15–19:30</td>
+        <td class="time-col"><span class="time-start">18:15</span><span class="dash">–</span><span class="time-end">19:30</span></td>
         <td></td>
         <td>
           <div class="cell blue-cell">
@@ -426,9 +428,9 @@
 
       <!-- 18:30–19:30 -->
       <tr>
-        <td class="time-col">18:30–19:30</td>
+        <td class="time-col"><span class="time-start">18:30</span><span class="dash">–</span><span class="time-end">19:30</span></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Функционал</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
@@ -441,7 +443,7 @@
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Функционал</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
@@ -454,7 +456,7 @@
           </div>
         </td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Функционал</span>
             <span class="cell-price">4 200 / 3 500 / 2 500 ₽</span>
           </div>
@@ -464,17 +466,17 @@
 
       <!-- 19:00–20:00 -->
       <tr>
-        <td class="time-col">19:00–20:00</td>
+        <td class="time-col"><span class="time-start">19:00</span><span class="dash">–</span><span class="time-end">20:00</span></td>
         <td></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес в гамаках</span>
             <span class="cell-price">3 400 / 2 400 ₽</span>
           </div>
         </td>
         <td></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес в гамаках</span>
             <span class="cell-price">3 400 / 2 400 ₽</span>
           </div>
@@ -485,23 +487,23 @@
 
       <!-- 20:00–20:50 -->
       <tr>
-        <td class="time-col">20:00–20:50</td>
+        <td class="time-col"><span class="time-start">20:00</span><span class="dash">–</span><span class="time-end">20:50</span></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес, йога, каланетика</span>
             <span class="cell-price">4 000 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес, йога, каланетика</span>
             <span class="cell-price">4 000 / 3 500 / 2 500 ₽</span>
           </div>
         </td>
         <td></td>
         <td>
-          <div class="cell orange-cell">
+          <div class="cell blue-cell">
             <span class="cell-name">Пилатес, йога, каланетика</span>
             <span class="cell-price">4 000 / 3 500 / 2 500 ₽</span>
           </div>
@@ -515,7 +517,7 @@
 
 <div class="table-note reveal">
 <strong>Все разовые занятия — 500 ₽.</strong> Стоимость указана по абонементам. Подробности по телефону
-<a href="tel:+73462563535" style="color:var(--blue);font-weight:800">+7 (3462) 56-35-35</a>
+<span class="nextphone"><a href="tel:+79044798787" style="color:var(--blue);font-weight:800">+7 (9044) 79-87-87 и +7 (3462) 56-35-35</a>
 </div>
 </div>
 </section>
@@ -527,9 +529,9 @@
 <div class="cta-text">
 <h2>Запишитесь на занятие</h2>
 <p>Оставьте номер телефона — мы перезвоним, подберём удобное время и расскажем о стоимости абонементов.</p>
-<a href="tel:+73462563535" class="cta-phone">
+<a href="tel:+79044798787" class="cta-phone">
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.4 11.4 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z" fill="currentColor"/></svg>
-+7 (3462) 56-35-35
++7 (9044) 79-87-87
 </a>
 </div>
 
@@ -550,8 +552,8 @@
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer class="footer">
 <div class="container">
-© 2025 Спортивный центр · г. Сургут, ул. Спортивная, 12 ·
-<a href="tel:+73462563535">+7 (3462) 56-35-35</a>
+© 2026 Спортивный центр · г. Сургут, ул. Магистральная, 36
+<br><a href="tel:+79044798787">+7 (9044) 79-87-87 и +7 (3462) 56-35-35</a>
 </div>
 </footer>
 
