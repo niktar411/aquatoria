@@ -136,6 +136,7 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
 .dir-grid{grid-template-columns:repeat(2,1fr)}
 .cta-inner{grid-template-columns:1fr;text-align:center}
 .cta-text p{margin:0 auto 24px}
+@keyframes scrollGallery{0%{transform:translateX(0)}100%{transform:translateX(-130%)}}
 }
 @media(max-width:760px){
 .header-inner{padding:10px 0;gap:10px}
@@ -166,6 +167,7 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
   .nextphone {
     display: block;
   }
+  @keyframes scrollGallery{0%{transform:translateX(0)}100%{transform:translateX(-210%)}}
 }
 .table-responsive {
   width: 100%;
