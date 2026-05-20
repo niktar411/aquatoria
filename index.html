@@ -8,7 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="/logo.jpg" type="jpg">
+<link rel="icon" href="/logo.png" type="png">
+<link rel="instagram" href="/instagram.jpg" type="jpg">
+<link rel="med-centre" href="/med-centre.jpg" type="jpg">
 <link rel="sport1" href="/sport1.jpg" type="jpg">
 <link rel="sport2" href="/sport2.jpg" type="jpg">
 <link rel="sport3" href="/sport3.jpg" type="jpg">
@@ -31,11 +33,18 @@
 <div class="container header-inner">
 <a href="#" class="logo">
     <span class="logo-icon">
-        <img src="logo.jpg" alt="Логотип" width="50" height="50">
+        <img src="logo.png" alt="Логотип" width="60" height="60">
     </span>
 </a>
-<span>#aquatoriafitness</span>
-</a>
+
+<div>
+  <span class="fitcentre">Фитнесс центр</span>
+</div>
+
+<div class="social-link">
+  <img src="instagram.jpg" alt="Инстаграм" width="15" height="15">
+  <span class="instagram">#aquatoriafitness</span>
+</div>
 
 <div class="header-address">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" fill="currentColor"/></svg>
@@ -48,12 +57,25 @@
 <a href="#contact">Запись</a>
 </nav>
 
-<a class="header-phone" href="tel:+79044798787">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.4 11.4 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z" fill="currentColor"/></svg>
-+7 (3462) 56-35-35
+<a class="header-phone" href="#contact">
+ЗАПИСАТЬСЯ
 </a>
-</div>
+
 </header>
+
+<div class="container header-inner" style="justify-content: center; display: flex; align-items: center; gap: 15px;">
+  <!-- Открываем кнопку-ссылку -->
+  <a class="akva-button" href="https://www.aquatoria86.ru/">
+    <div class="logo">
+      <span class="logo-icon">
+        <img src="med-centre.jpg" alt="Логотип" width="60" height="60" style="display: block;">
+      </span>
+    </div>
+    <div>
+      <span style="font-weight: bold;">Медицинский центр</span>
+    </div>
+  </a> <!-- Закрываем кнопку-ссылку -->
+</div>
 
 <!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero">
@@ -611,7 +633,7 @@ const ok = document.getElementById('formSuccess');
 const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
 
 // ВСТАВЬТЕ СЮДА ССЫЛКУ ИЗ GOOGLE APPS SCRIPT:
-const scriptURL = 'https://script.google.com/macros/s/AKfycby0WSOL76aZRuSCjiaRrD2Z_cxZr2mmOm_WhyPBggf1mB3jRmiBkH1hgG3dIUVHRTe4/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyhXEQeDZF0Uy35rPmZalWeIDAssadzuiQz4VRK_leQuVLNxwI4-IqN76v59uEPUsg/exec';
 
 if (form) {
   form.addEventListener('submit', e => {

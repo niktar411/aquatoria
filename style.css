@@ -167,6 +167,15 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
   .nextphone {
     display: block;
   }
+  .fitcentre {
+    font-size: 18px !important;
+  }
+  .instagram {
+    font-size: 11px !important;
+  }
+  .akva-button {
+    padding: 6px 60px !important;
+  }
   @keyframes scrollGallery{0%{transform:translateX(0)}100%{transform:translateX(-210%)}}
 }
 .table-responsive {
@@ -224,3 +233,62 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
 .cell-name { font-weight: bold; font-size: 14px; }
 .cell-info { font-size: 12px; color: #555; }
 .cell-price { font-size: 12px; font-weight: bold; margin-top: 4px; }
+
+.instagram {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.akva-button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle; 
+  gap: 6px; /* Чуть увеличили расстояние между логотипом и текстом */
+  padding: 6px 120px; /* Сделали кнопку более вытянутой и аккуратной */
+  border-radius: 999px;
+  background: #f8f9fa;
+  color: #1a1a1a; /* Мягкий черный вместо глухого #000000 */
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Тонкая, едва заметная эстетичная рамка */
+  font-weight: 600; /* 800 слишком тяжелый для текста, 600 выглядит аккуратнее */
+  font-size: 15px;
+  letter-spacing: -0.2px; /* Легкий трекинг для современного вида текста */
+  text-decoration: none; /* Убирает дефолтное подчеркивание ссылки */
+  
+  /* Элегантная мягкая тень */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 20px -5px rgba(15, 111, 186, 0.08);
+  
+  /* Плавный переход для всех изменяемых свойств */
+  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Красивый интерактивный эффект при наведении */
+.akva-button:hover {
+  background: #f8fbc4; /* Очень легкий, благородный оттенок (или используйте ваш var(--blue-dark)) */
+  border-color: rgba(15, 111, 186, 0.3); /* Рамка мягко окрашивается в синеватый тон */
+  color: #0f6fba; /* Текст становится фирменного синего цвета */
+  box-shadow: 0 20px 30px -10px rgba(15, 111, 186, 0.18); /* Тень становится глубже, имитируя легкий подъем */
+}
+
+/* Стили для картинки внутри кнопки, чтобы она сочеталась с округлыми формами */
+.akva-button img {
+  border-radius: 50%; /* Делает квадратный логотип круглым и аккуратным внутри овальной кнопки */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.akva-button svg {
+  flex-shrink: 0;
+}
+
+.fitcentre {
+  font-weight: bold;
+  font-size: 17px;
+}
