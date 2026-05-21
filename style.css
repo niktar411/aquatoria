@@ -292,3 +292,146 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
   font-weight: bold;
   font-size: 17px;
 }
+
+/* ─── Кастомная галочка в форме (на синем фоне) ─── */
+.custom-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  margin-top: 4px;
+  position: relative;
+}
+
+/* Прячем стандартный системный квадратик */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Рисуем свой красивый квадратик */
+.checkmark {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.custom-checkbox:hover .checkmark {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Состояние: когда галочка нажата */
+.custom-checkbox input:checked ~ .checkmark {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+/* Сама "птичка" внутри квадратика */
+.checkmark::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-bottom: 2px; /* Выравнивание по центру */
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+  opacity: 1;
+}
+
+.checkbox-text {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.4;
+  padding-top: 2px;
+}
+
+.checkbox-text a {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s;
+}
+
+.checkbox-text a:hover {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+/* ─── Всплывающий стильный Cookie Banner ─── */
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(150%); /* Спрятан внизу экрана */
+  width: min(800px, calc(100% - 32px));
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  z-index: 9999;
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+}
+
+/* Класс, который плавно показывает баннер */
+.cookie-banner.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.cookie-text {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.cookie-text a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-text a:hover {
+  text-decoration: none;
+}
+
+.cookie-btn {
+  min-height: 48px;
+  padding: 0 32px;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Адаптация баннера для телефонов */
+@media (max-width: 600px) {
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    bottom: 16px;
+    padding: 20px;
+    gap: 16px;
+  }
+  .cookie-btn {
+    width: 100%;
+  }
+}
