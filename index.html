@@ -587,13 +587,7 @@
 </div>
 </footer>
 
-<!-- BANNER COOKIE -->
-<div class="cookie-banner" id="cookieBanner">
-  <div class="cookie-text">
-    Мы используем файлы cookie для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="privacy-policy.html" target="_blank">Политикой конфиденциальности</a>.
-  </div>
-  <button class="btn btn-primary cookie-btn" id="acceptCookies">Принять</button>
-</div>
+
 
 <!-- ═══════════════ SCRIPTS ═══════════════ -->
 <script>
@@ -707,25 +701,6 @@ if (today >= 1 && today <= 6) {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  const cookieBanner = document.getElementById("cookieBanner");
-  const acceptBtn = document.getElementById("acceptCookies");
-
-  // Если в памяти браузера нет пометки о согласии
-  if (!localStorage.getItem("cookiesAccepted")) {
-    // Небольшая задержка, чтобы баннер выехал красиво после загрузки
-    setTimeout(() => {
-      cookieBanner.classList.add("show");
-    }, 1000);
-  }
-
-  // Нажатие на кнопку
-  acceptBtn.addEventListener("click", function() {
-    localStorage.setItem("cookiesAccepted", "true");
-    cookieBanner.classList.remove("show"); // плавно уезжает вниз
-  });
-});
 </script>
 </body>
 </html>
