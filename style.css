@@ -166,6 +166,7 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
   }
   .nextphone {
     display: block;
+    font-size: 14px !important;
   }
   .fitcentre {
     font-size: 18px !important;
@@ -175,6 +176,9 @@ tbody td{vertical-align:top;padding:6px;border:1px solid var(--border);width:cal
   }
   .akva-button {
     padding: 6px 60px !important;
+  }
+  .cta-phone {
+    font-size: 21px !important;
   }
   @keyframes scrollGallery{0%{transform:translateX(0)}100%{transform:translateX(-210%)}}
 }
